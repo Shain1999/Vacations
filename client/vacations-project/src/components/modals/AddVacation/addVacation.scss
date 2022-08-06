@@ -1,0 +1,81 @@
+@import "../../../assests/scss/globalStyle.scss";
+
+.AddVacation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.wrapperAddVac{
+    background: $lightSteelBlue;
+    border-radius: 10px;
+    border: 2px solid $darkBlue;
+    padding: 3rem;
+    position: relative;
+    display: flex;
+    width: fit-content;
+    margin: 10% auto ;
+    bottom: 5%;
+    justify-content: space-around;
+    align-items: top;
+    text-align: center;
+    z-index: 1000;
+}
+.addVacTitleDiv{
+    width: fit-content;
+    margin: 0 auto;
+    
+
+}
+.addVacationTitle{
+    padding: 0em 2em ;
+    font-size: 2rem;
+    color: $darkBlue;
+    border-bottom: 3px solid $cornFlowerBlue;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+.addVacationContainer{
+    width: fit-content;
+    margin: 10% auto 0;
+    display: flex;
+    flex-direction: column;
+}
+.vacationPropName{
+    width: fit-content;
+    padding: 0 0.3rem;
+    border-bottom: 2px solid $darkBlue;
+}
+.vacationPropDiv{
+    box-shadow: 0 0 1rem rgba(0,0,0,0.2);
+    border: 2px solid $purplishBlue;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 0.5em 0.3em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    & input{
+        width: 50%;
+        border: none;
+        background: none;
+        outline: none;
+        border-bottom: 2px solid $purplishBlue;
+        &::placeholder{
+            color: $purplishBlue;
+        }
+    }
+}
+.errDiv{
+    position: absolute;
+    top: 40%;
+    left: 110%;
+    width: 200px;
+    border: 2px solid red;
+    color: red;
+    background: black;
+
+}

@@ -1,0 +1,90 @@
+@import "../../../assests/scss/globalStyle.scss";
+$backgroundTextVacation: #8760d026;
+$fontSize: calc(2rem + 1.5vw);
+
+.Card {
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    box-shadow: 0 0 1rem $lightSteelBlue;
+    height: 100%;
+    border: 4px solid rgb(66, 66, 239);
+    border-radius: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    transition: all 300ms ease;
+
+
+
+}
+
+.Card:hover {
+    box-shadow: 0 0 0.5rem $lightSteelBlue, 0 0 2rem $lightSteelBlue,
+        0 0 6rem $lightSteelBlue;
+}
+
+.adminControls {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.adminControls>* {
+    transform: scale(2);
+    cursor: pointer;
+    transition: all 300ms ease;
+
+    &:hover {
+        transform: scale(2.6);
+    }
+}
+
+.card-container {
+
+    background-color: $backgroundCard;
+    z-index: 0;
+    padding: 1rem;
+    border-radius: 1vh;
+    height: fit-content;
+}
+
+.content {
+    z-index: 1;
+}
+
+.flexDiv {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    margin: 7% auto;
+    position: relative;
+
+    .title {
+        font-weight: bold;
+        font-size: $fontSize;
+
+
+    }
+
+    .card-vacationValue {
+        border-bottom: 2px solid $purplishBlue;
+        padding: 2px 1rem;
+        color: $lightSteelBlue;
+        background: $backgroundTextVacation;
+        border-radius: 0 55% 0 50%;
+        transition: font-weight 100ms ease;
+
+        &:hover {
+            font-weight: bolder;
+
+        }
+
+    }
+}
+
+.controlHoverP {
+    width: 80px;
+}

@@ -1,0 +1,8 @@
+@import "assests/scss/globalStyle.scss";
+
+
+body{
+    background-image: linear-gradient(to right top ,$lightSteelBlue 20%,$skyBlue,$purplishBlue,$backgroundColor 100%,$lightSteelBlue 100%);
+    
+    min-height: 100vh;
+}

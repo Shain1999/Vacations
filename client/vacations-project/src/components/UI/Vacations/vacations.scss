@@ -1,0 +1,19 @@
+@import "../../../assests/scss/globalStyle.scss";
+
+.vacations-grid {
+    padding: 1rem;
+    width: 90%;
+    margin: 3% auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    gap: 2em;
+    justify-content: center;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    background-image: linear-gradient(to right top, $lightSteelBlue 20%, $skyBlue, $purplishBlue, $backgroundColor 100%, $lightSteelBlue 100%);
+    border: 2px solid $mediumPurple;
+    object-fit: "fill";
+    background-repeat: "repeat";
+    background-position: "center";
+    background-size: "100%";
+}

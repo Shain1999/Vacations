@@ -1,0 +1,130 @@
+@import "../../../assests/scss/globalStyle.scss";
+$backgroundForm:#4d4d90;
+
+.EditCard {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.wrapperEdit {
+    background: $backgroundForm;
+    border-radius: 10px;
+    border: 2px solid $darkBlue;
+    padding: 3rem;
+    position: relative;
+    display: flex;
+    width: fit-content;
+    margin: 10% auto 0;
+    justify-content: space-around;
+    align-items: top;
+    text-align: center;
+    z-index: 1000;
+
+}
+
+.editCardTitleDiv {
+    width: fit-content;
+    margin: 0 auto 5%;
+    padding: 1rem;
+    border-bottom: 2px solid $darkBlue;
+    border-radius: 50px 10vw 10vw 50px;
+    background-color: $cornFlowerBlue;
+    box-shadow: 0 0 1rem $darkBlue, 0 0 2rem rgba(0, 0, 0, 0.5);
+}
+
+.BtnsDiv {
+    width: 100%;
+    margin: 10% auto 0;
+    display: flex;
+    justify-content: space-around;
+
+    & input {
+        border-radius: 10px;
+        border: 2px solid transparent;
+        padding: 1rem 1.5rem;
+        cursor: pointer;
+        transition: all 300ms ease;
+
+        &:hover {
+            transform: scale(1.1);
+            font-weight: bolder;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+
+        }
+    }
+}
+
+.editCard-cancelBtn {
+    background: $darkBlue;
+    color: $cornFlowerBlue;
+
+    &:hover {
+        color: $lightSteelBlue;
+        background: black;
+        border-color: red;
+    }
+}
+
+.editCard-saveBtn {
+
+    background: $cornFlowerBlue;
+    color: $darkBlue;
+
+    &:hover {
+        color: $cornFlowerBlue;
+        background: $darkBlue;
+        border-color: $mediumPurple;
+    }
+}
+
+.container {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.editCardContent {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.editCardTitle {
+    color: $darkBlue;
+    font-size: 2rem;
+}
+
+.vacationParameterDiv {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 3% auto;
+
+    & input {
+        border: none;
+        outline: none;
+        background: none;
+        border-bottom: 2px solid $darkBlue;
+        width: 40%;
+        color: white;
+
+        &::placeholder {
+            text-align: center;
+            color: $lightSteelBlue;
+            opacity: 0.8;
+        }
+    }
+
+    & p {
+        border-bottom: 2px solid $mediumPurple;
+        width: 40%;
+        color: $lightSteelBlue;
+    }
+
+}

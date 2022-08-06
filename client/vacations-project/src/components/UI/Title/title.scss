@@ -1,0 +1,16 @@
+@import "../../../assests/scss/globalStyle.scss";
+
+.site-Title {
+    color: $purplishBlue;
+    font-size: $fontTitleSize;
+    width: fit-content;
+    margin: 0 auto;
+    border: 2px solid $mediumPurple;
+    padding: 1rem 2rem ;
+    margin-top: 2rem;
+    border-radius: 2vh;
+    background: $lightSteelBlue;
+    font-weight: bold;
+    box-shadow: 0 0 1rem $skyBlue,0 0 3rem rgba(0,0,0,.45);
+    
+}
